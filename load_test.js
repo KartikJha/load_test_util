@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 // Load testing script with configurable parameters
 const http = require('http')
 const https = require('https')
