@@ -474,5 +474,3 @@ main()
 //       await client.close();
 //   }
 // }
-
-// createMonitoringUser('mongodb+srv://prod_lambda_aws:rzO5D1g22y0LynUW@puffles.6eexf.mongodb.net/?retryWrites=true&w=majority&appName=Puffles')
