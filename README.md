@@ -20,7 +20,7 @@ npm install -g load_test_util
 Or via yarn:
 
 ```sh
-yarn add global load_test_utl
+yarn global add load_test_util
 ```
 
 ## Usage
