@@ -118,25 +118,6 @@ class LoadTester {
       'Content-Type': 'application/json',
     }
 
-    // const options = {
-    //   method: 'POST',
-    //   hostname: this.config.url,
-    //   path: '/address_by_URI',
-    //   headers: {
-    //     'Content-Type': ['application/json', 'application/json'],
-    //     'Accept-Language': 'en-US,en;q=0.5',
-    //     Referer: 'https://ma.puffles.io/',
-    //     'ngrok-skip-browser-warning': 'true',
-    //     Origin: 'https://ma.puffles.io',
-    //     'Sec-Fetch-Dest': 'empty',
-    //     'Sec-Fetch-Mode': 'cors',
-    //     'Sec-Fetch-Site': 'cross-site',
-    //     Priority: 'u=4',
-    //     TE: 'trailers',
-    //   },
-    //   maxRedirects: 20,
-    // }
-
     return new Promise((resolve) => {
       const startTime = Date.now()
       const req = client.request(options, (res) => {
