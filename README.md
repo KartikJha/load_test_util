@@ -1,6 +1,6 @@
 # Load Testing Tool
 
-A powerful load-testing tool designed to simulate and analyze HTTP requests while monitoring system performance. It provides logging, HTTP request handling, and MongoDB monitoring.
+A powerful load-testing tool designed to simulate heavy load scenarios via json config through CLI. Logging and summarizing API and DB metrics. Currently supports MongoDB (more databases to be added soon). Contributions are welcome
 
 ## Features
 
