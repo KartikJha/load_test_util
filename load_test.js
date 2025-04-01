@@ -406,23 +406,6 @@ async function runLoadTest({
   }
 }
 
-// runLoadTest({
-//   logDir: 'load_test_logs',
-//   prefix: 'load_test',
-//   mongoDBUrl: 'mongodb+srv://prod_lambda_aws:rzO5D1g22y0LynUW@puffles.6eexf.mongodb.net/?retryWrites=true&w=majority&appName=Puffles',
-//   apiUrl: 'https://kubend.puffles.io/address_by_URI',
-//   method: 'POST',
-//   payload: {
-//     title: 'search',
-//     URI: 'wltest1522',
-//   },
-//   startUsers: 200,
-//   maxUsers: 2000,
-//   incrementBy: 100,
-//   durationPerStep: 30,
-//   rampUpTime: 5
-// })
-
 function main() {
   // Parse command-line arguments
   const args = process.argv.slice(2)
