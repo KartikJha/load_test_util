@@ -49,6 +49,10 @@ sample_config.json
 
 ```sh
 load-test --config /path/to/sample_config.json
+Load test started. Logging to: load_test_logs/load_test_2025-04-01_21-35-53-568.txt
+Starting load test...
+
+Ramping up to 200 users...
 ```
 ## Configuration Options
 
