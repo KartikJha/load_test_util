@@ -59,7 +59,7 @@ Ramping up to 200 users...
 ```sh
 logDir: Directory to store logs.
 prefix: Prefix for log file names.
-mongoDBUrl: MongoDB connection string for storing results (optional).
+mongoDBUrl: MongoDB connection string with admin user for capturing serverStatus metrics (optional).
 apiUrl: The API endpoint to test.
 method: HTTP method (e.g., GET, POST).
 payload: JSON payload for the request (used for POST or PUT methods).

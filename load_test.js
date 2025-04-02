@@ -362,9 +362,12 @@ async function runLoadTest({
   const logFile = logger.start()
   console.log(`Load test started. Logging to: ${logFile}`)
 
-  const monitor = new MongoDBMonitor(mongoDBUrl)
-  await monitor.start()
-
+  const monitor = null;
+  if (mongoDBUrl) {
+    monitor = new MongoDBMonitor(mongoDBUrl)
+    await monitor.start()
+  }
+ 
   // Your existing load test code here
   const loadTest = new LoadTester({
     // url: 'http://ec2-13-233-120-118.ap-south-1.compute.amazonaws.com:30008/address_by_URI',
@@ -382,8 +385,10 @@ async function runLoadTest({
   try {
     await loadTest.start()
   } finally {
-    await monitor.stop()
-    monitor.printSummary()
+    if (monitor) {
+      await monitor.stop()
+      monitor.printSummary()
+    }
   }
 }
 
@@ -436,5 +441,5 @@ main()
 //       });
 //   } finally {
 //       await client.close();
-//   }
+//   }storing results
 // }
